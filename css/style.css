@@ -1,0 +1,362 @@
+input {
+  outline: none;
+  border: none;
+}
+.act {
+  background: #eefffa !important;
+}
+.table-striped {
+  margin-bottom: 0;
+}
+.del {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-image: url(//xhzy-my-ws.oss-cn-hangzhou.aliyuncs.com/dataWall/imgs/del.svg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 15;
+}
+.del:hover {
+  background-image: url(//xhzy-my-ws.oss-cn-hangzhou.aliyuncs.com/dataWall/imgs/del_h.svg);
+}
+select,
+select:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 0 7px;
+  background: #fff;
+  float: left;
+  height: 100%;
+  width: 50px;
+  margin-left: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html header,
+body header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #000;
+  z-index: 5;
+}
+html header h1,
+body header h1 {
+  line-height: 50px;
+  margin: 0;
+  font-size: 24px;
+}
+html header .upAll,
+body header .upAll {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  line-height: 50px;
+  cursor: pointer;
+}
+html .content,
+body .content {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+}
+html .content .left,
+body .content .left {
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid #000;
+  overflow: auto;
+}
+html .content .left th,
+body .content .left th,
+html .content .left td,
+body .content .left td {
+  text-align: center;
+}
+html .content .left td,
+body .content .left td {
+  cursor: pointer;
+}
+html .content .right,
+body .content .right {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+}
+html .content .right .main,
+body .content .right .main {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+html .content .right .main .Dispatch,
+body .content .right .main .Dispatch,
+html .content .right .main .Reprint,
+body .content .right .main .Reprint,
+html .content .right .main .Read,
+body .content .right .main .Read,
+html .content .right .main .Remark,
+body .content .right .main .Remark,
+html .content .right .main .Good,
+body .content .right .main .Good {
+  height: 30px;
+  line-height: 30px;
+  margin-left: 90px;
+}
+html .content .right .main .dispatch,
+body .content .right .main .dispatch,
+html .content .right .main .reprint,
+body .content .right .main .reprint,
+html .content .right .main .read,
+body .content .right .main .read,
+html .content .right .main .remark,
+body .content .right .main .remark,
+html .content .right .main .good,
+body .content .right .main .good {
+  width: 80px;
+  height: 30px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+html .content .right .main .newsBox,
+body .content .right .main .newsBox,
+html .content .right .main .oldNews,
+body .content .right .main .oldNews,
+html .content .right .main .commentsBox,
+body .content .right .main .commentsBox,
+html .content .right .main .manuscriptBox,
+body .content .right .main .manuscriptBox,
+html .content .right .main .informationBox,
+body .content .right .main .informationBox,
+html .content .right .main .cityNewsBox,
+body .content .right .main .cityNewsBox {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+  overflow: auto;
+  background: #f5f5f5;
+  z-index: 1;
+}
+html .content .right .main .newsBox .title,
+body .content .right .main .newsBox .title,
+html .content .right .main .oldNews .title,
+body .content .right .main .oldNews .title,
+html .content .right .main .commentsBox .title,
+body .content .right .main .commentsBox .title,
+html .content .right .main .manuscriptBox .title,
+body .content .right .main .manuscriptBox .title,
+html .content .right .main .informationBox .title,
+body .content .right .main .informationBox .title,
+html .content .right .main .cityNewsBox .title,
+body .content .right .main .cityNewsBox .title {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px dashed #000;
+}
+html .content .right .main .newsBox .title h2,
+body .content .right .main .newsBox .title h2,
+html .content .right .main .oldNews .title h2,
+body .content .right .main .oldNews .title h2,
+html .content .right .main .commentsBox .title h2,
+body .content .right .main .commentsBox .title h2,
+html .content .right .main .manuscriptBox .title h2,
+body .content .right .main .manuscriptBox .title h2,
+html .content .right .main .informationBox .title h2,
+body .content .right .main .informationBox .title h2,
+html .content .right .main .cityNewsBox .title h2,
+body .content .right .main .cityNewsBox .title h2 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 40px;
+}
+html .content .right .main .newsBox .title .add,
+body .content .right .main .newsBox .title .add,
+html .content .right .main .oldNews .title .add,
+body .content .right .main .oldNews .title .add,
+html .content .right .main .commentsBox .title .add,
+body .content .right .main .commentsBox .title .add,
+html .content .right .main .manuscriptBox .title .add,
+body .content .right .main .manuscriptBox .title .add,
+html .content .right .main .informationBox .title .add,
+body .content .right .main .informationBox .title .add,
+html .content .right .main .cityNewsBox .title .add,
+body .content .right .main .cityNewsBox .title .add {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+html .content .right .main .newsBox .record,
+body .content .right .main .newsBox .record,
+html .content .right .main .oldNews .record,
+body .content .right .main .oldNews .record {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+html .content .right .main .newsBox .record .hot,
+body .content .right .main .newsBox .record .hot,
+html .content .right .main .oldNews .record .hot,
+body .content .right .main .oldNews .record .hot,
+html .content .right .main .newsBox .record .tlt,
+body .content .right .main .newsBox .record .tlt,
+html .content .right .main .oldNews .record .tlt,
+body .content .right .main .oldNews .record .tlt,
+html .content .right .main .newsBox .record .institution,
+body .content .right .main .newsBox .record .institution,
+html .content .right .main .oldNews .record .institution,
+body .content .right .main .oldNews .record .institution {
+  float: left;
+  padding-left: 3px;
+  margin-left: 10px;
+  height: 100%;
+  border-radius: 5px;
+}
+html .content .right .main .newsBox .record .hot,
+body .content .right .main .newsBox .record .hot,
+html .content .right .main .oldNews .record .hot,
+body .content .right .main .oldNews .record .hot {
+  width: 85px;
+  padding-left: 8px;
+}
+html .content .right .main .newsBox .record .tlt,
+body .content .right .main .newsBox .record .tlt,
+html .content .right .main .oldNews .record .tlt,
+body .content .right .main .oldNews .record .tlt {
+  width: 490px;
+}
+html .content .right .main .newsBox .record .institution,
+body .content .right .main .newsBox .record .institution,
+html .content .right .main .oldNews .record .institution,
+body .content .right .main .oldNews .record .institution {
+  width: 445px;
+}
+html .content .right .main .commentsBox .record,
+body .content .right .main .commentsBox .record {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+html .content .right .main .commentsBox .record .nickname,
+body .content .right .main .commentsBox .record .nickname {
+  width: 200px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+html .content .right .main .commentsBox .record .review,
+body .content .right .main .commentsBox .record .review {
+  width: 888px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  padding-left: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+html .content .right .main .manuscriptBox .record,
+body .content .right .main .manuscriptBox .record {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+html .content .right .main .manuscriptBox .record .quantity,
+body .content .right .main .manuscriptBox .record .quantity,
+html .content .right .main .manuscriptBox .record .institution,
+body .content .right .main .manuscriptBox .record .institution {
+  float: left;
+  height: 100%;
+  width: 160px;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-left: 3px;
+}
+html .content .right .main .manuscriptBox .record .institution,
+body .content .right .main .manuscriptBox .record .institution {
+  width: 870px;
+}
+html .content .right .main .informationBox .record,
+body .content .right .main .informationBox .record {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+html .content .right .main .informationBox .record .percent,
+body .content .right .main .informationBox .record .percent,
+html .content .right .main .informationBox .record .institution,
+body .content .right .main .informationBox .record .institution {
+  float: left;
+  width: 545px;
+  height: 100%;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding-left: 3px;
+}
+html .content .right .main .cityNewsBox .record,
+body .content .right .main .cityNewsBox .record {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+html .content .right .main .cityNewsBox .record .allCity,
+body .content .right .main .cityNewsBox .record .allCity {
+  float: left;
+  margin-left: 10px;
+  width: 150px;
+  padding-left: 3px;
+}
+html .content .right .main .cityNewsBox .record .tlt,
+body .content .right .main .cityNewsBox .record .tlt,
+html .content .right .main .cityNewsBox .record .institution,
+body .content .right .main .cityNewsBox .record .institution {
+  float: left;
+  margin-left: 10px;
+  padding-left: 3px;
+  height: 100%;
+  width: 460px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+html .content .right .main .cityNewsBox .record .institution,
+body .content .right .main .cityNewsBox .record .institution {
+  width: 410px;
+}
